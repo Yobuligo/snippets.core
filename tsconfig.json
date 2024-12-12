@@ -13,5 +13,5 @@
     "esModuleInterop": true,
     "skipDefaultLibCheck": true
   },
-  "include": ["src/**/*", "tests/lib/serviceProvider/ServiceProvider.test.ts", "tests/lib/decorator/DecoratorStore.test.ts"]
+  "include": ["src/**/*"]
 }
