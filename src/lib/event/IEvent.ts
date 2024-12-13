@@ -1,5 +1,5 @@
-import { FunctionParams } from "../types/FunctionParams";
-import { VoidHandler } from "./../types/VoidHandler";
+import { FunctionParams } from "../core/types/FunctionParams";
+import { VoidHandler } from "../core/types/VoidHandler";
 
 /**
  * An implementation of this interface represents an event to register on or unregister from handlers
