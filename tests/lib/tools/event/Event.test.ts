@@ -1,7 +1,7 @@
 import { expect } from "chai";
-import { Event } from "../../../src/lib/event/Event";
+import { Event } from "../../../../src/lib/tools/event/Event";
 
-describe.only("Event", () => {
+describe("Event", () => {
   it("registers handler without notifying it", () => {
     let called = false;
     new Event().onEvent(() => (called = true));

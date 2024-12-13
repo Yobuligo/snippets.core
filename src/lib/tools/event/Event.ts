@@ -1,5 +1,5 @@
-import { FunctionParams } from "../core/types/FunctionParams";
-import { VoidHandler } from "../core/types/VoidHandler";
+import { FunctionParams } from "../../core/types/FunctionParams";
+import { VoidHandler } from "../../core/types/VoidHandler";
 import { IEvent } from "./IEvent";
 
 /**

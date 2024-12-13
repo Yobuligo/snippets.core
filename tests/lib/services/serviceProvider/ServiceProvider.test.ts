@@ -1,7 +1,7 @@
 import { expect } from "chai";
-import { Service } from "../../../src/lib/serviceProvider/Service";
-import { SP } from "../../../src/lib/serviceProvider/ServiceProvider";
-import { ServiceInstanceType } from "../../../src/lib/serviceProvider/types/ServiceInstanceType";
+import { Service } from "../../../../src/lib/services/serviceProvider/Service";
+import { SP } from "../../../../src/lib/services/serviceProvider/ServiceProvider";
+import { ServiceInstanceType } from "../../../../src/lib/services/serviceProvider/types/ServiceInstanceType";
 
 describe("ServiceProvider", () => {
   describe("contains", () => {

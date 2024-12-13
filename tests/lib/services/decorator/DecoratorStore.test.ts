@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { DecoratorStore } from "../../../src/lib/decorator/DecoratorStore";
+import { DecoratorStore } from "../../../../src/lib/services/decorator/DecoratorStore";
 
 const DemoDecorator = () => {};
 
