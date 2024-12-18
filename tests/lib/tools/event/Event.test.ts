@@ -2,13 +2,13 @@ import { expect } from "chai";
 import { Event } from "../../../../src/lib/tools/event/Event";
 
 describe("Event", () => {
-  it("registers handler without notifying it", () => {
+  it("Registers handler without notifying it", () => {
     let called = false;
     new Event().onEvent(() => (called = true));
     expect(called).false;
   });
 
-  it("notifies handler", () => {
+  it("Notifies handler", () => {
     let called = false;
     const event = new Event();
     event.onEvent(() => (called = true));
@@ -16,7 +16,7 @@ describe("Event", () => {
     expect(called).true;
   });
 
-  it("notifies all registered handlers", () => {
+  it("Notifies all registered handlers", () => {
     let firstCalled = false;
     let secondCalled = false;
     const event = new Event();
@@ -27,7 +27,7 @@ describe("Event", () => {
     expect(secondCalled).true;
   });
 
-  it("notifies handlers with parameters", () => {
+  it("Notifies handlers with parameters", () => {
     let value = 0;
     const expected = 123;
     const event = new Event<(newValue: number) => void>();
@@ -36,7 +36,7 @@ describe("Event", () => {
     expect(value).equal(expected);
   });
 
-  it("notifies multiple times registered handler", () => {
+  it("Notifies multiple times registered handler", () => {
     let called = 0;
     const event = new Event();
     const handler = () => called++;
@@ -46,7 +46,7 @@ describe("Event", () => {
     expect(called).equal(2);
   });
 
-  it("stops notification when unregister from event", () => {
+  it("Stops notification when unregister from event", () => {
     let firstCalled = false;
     let secondCalled = false;
     const event = new Event();
